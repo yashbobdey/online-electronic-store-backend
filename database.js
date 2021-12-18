@@ -3,7 +3,7 @@ require("dotenv").config();
 const mongoose = require("mongoose");
 
 const connectDatabase = async () => {
-  const url = `mongodb+srv://yashbobdey:yash8275@mern.l6dhg.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
+  const url = process.env.URL;
   const con = await mongoose.connect(
     url,
     {
