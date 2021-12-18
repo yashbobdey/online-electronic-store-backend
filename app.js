@@ -32,9 +32,9 @@ app.use("/orders", orderRouter);
 app.use("/search", searchRouter);
 //------------------------------------ Any other Route ------------------
 
-app.all("*", (req, res, next) => {
-  next(new AppError(`Can't find ${req.originalUrl} on this server!`, 404));
-});
+// app.all("*", (req, res, next) => {
+//   next(new AppError(`Can't find ${req.originalUrl} on this server!`, 404));
+// });
 
 // ----------------------------------- Global Error Handler -----------------
 
