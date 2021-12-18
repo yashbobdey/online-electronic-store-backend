@@ -12,8 +12,8 @@ const connectDatabase = require("./database");
 const startServer = async () => {
   await connectDatabase();
 
-  return app.listen(process.env.SPORT || 3000, () => {
-    console.log(`Server started on port ${process.env.SPORT}`);
+  return app.listen(process.env.PORT || 3000, () => {
+    console.log(`Server started on port ${process.env.PORT}`);
   });
 };
 
