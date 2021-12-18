@@ -12,7 +12,7 @@ const connectDatabase = require("./database");
 const startServer = async () => {
   await connectDatabase();
 
-  return app.listen(process.env.SERVER_PORT, () => {
+  return app.listen(process.env.SERVER_PORT || 5000, () => {
     console.log(`Server started on port ${process.env.SERVER_PORT}`);
   });
 };
