@@ -19,7 +19,7 @@ const connectDatabase = async () => {
       }
     }
   );
-  console.log(`database connected on port ${process.env.DPORT}`);
+  console.log(`database connected on port ${process.env.DBPORT}`);
   return con;
 };
 
