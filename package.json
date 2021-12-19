@@ -20,5 +20,8 @@
     "mongoose": "^5.12.14",
     "morgan": "^1.10.0",
     "react-bootstrap": "^1.6.1"
+  },
+  "devServer":{
+    "historyApiFallback":true
   }
 }
